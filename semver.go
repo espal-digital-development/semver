@@ -28,7 +28,7 @@ type Semver struct {
 	reValid *regexp.Regexp
 }
 
-// IsValid checks if the given version is a valid semver format.
+// Valid checks if the given version is a valid semver format.
 func (s *Semver) Valid(version string) bool {
 	return s.reValid.MatchString(version)
 }
